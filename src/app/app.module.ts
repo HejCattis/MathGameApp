@@ -1,14 +1,20 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
+import { EquationComponent } from './equation/equation.component';
+import { AnswerHiglightDirective } from './answer-higlight.directive';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    EquationComponent,
+    AnswerHiglightDirective
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

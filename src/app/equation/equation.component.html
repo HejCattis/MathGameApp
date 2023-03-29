@@ -1,0 +1,12 @@
+<form [formGroup]="mathForm">
+    <div class="equation">{{ a }} + {{ b }} =</div>
+    <input appAnswerHiglight formControlName="answer" [ngClass]="{ }">
+</form>
+
+<div class="stats">{{secondsPerSolution | number: '1.1-3'}}</div>
+
+<!-- Debugging
+    <hr>
+<div>Form is valid: {{ mathForm.valid }}</div>
+<div>Form value: {{ mathForm.value | json }}</div>
+<div>Form error: {{ mathForm.errors | json }}</div> -->
